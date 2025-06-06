@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOUSIF-Z the web site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="account.html">Accounts</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <img src="add to.jpg" alt="" width="30px">
+
+  <div class="row">
+    <div class="col-2">
+      <h1>𝙂𝙞𝙫𝙚 𝙈𝙚 𝙔𝙤𝙪𝙧 𝘿𝙚𝙩𝙖𝙞𝙡𝙨!</h1>
+      <p>"Welcome to TOUSIF-Z! Let’s create something amazing together!"<br>
+      Let me know if you want something more specific!</p>
+      <a href="http://127.0.0.1:5501/new%20web%20site/explore.html" class="btn">Explore Now &#8594;</a>
+    </div>
+    <div class="col-2">
+      <img src="tousif_z.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="categories">
+    <div class="row">
+      <div class="col-3">
+        <img src="the art of being alone.jpg" alt="" width="250px">
+      </div>
+      <div class="col-3">
+        <img src="the power.jpg" alt="" width="250px">
+      </div>
+      <div class="col-3">
+        <img src="i don't love.jpg" alt="" width="250px">
+      </div>
+    </div>
+  </div>
+
+  <div class="small-container">
+    <h2>Featured products</h2>
+    <div class="row">
+      <div class="col-4">
+        <img src="i don't love.jpg" alt="">
+        <h3>I Don't Love You Anymore</h3>
+        <p>RS-150/-</p>
+        <div>
+          <a href="http://127.0.0.1:5500/tousif.html">Add To Cart</a>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="the power.jpg" alt="">
+        <h3>THE POWER OF YOUR SUBCONSCIOUS MIND</h3>
+        <p>RS-170/-</p>
+        <div>
+          <a href="http://127.0.0.1:5500/tousif.html">Add To Cart</a>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="the art of being alone.jpg" alt="">
+        <h3>The Art Of Being Alone</h3>
+        <p>RS-130/-</p>
+        <div>
+          <a href="http://127.0.0.1:5500/tousif.html">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href="http://127.0.0.1:5501/new%20web%20site/help.html">Help</a></li>
+    </ul>
+  </footer>
+
+  <!-- ✅ JavaScript added properly here -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("Website Loaded Successfully!");
+
+      // Add event listeners to all "Add To Cart" buttons
+      let addToCartButtons = document.querySelectorAll('.col-4 a');
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', function (event) {
+          event.preventDefault();
+          alert("Item added to cart!");
+        });
+      });
+
+      // Optional: Toggle navbar active on click
+      let navToggle = document.querySelector(".navbar");
+      if (navToggle) {
+        navToggle.addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
